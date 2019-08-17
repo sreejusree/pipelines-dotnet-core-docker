@@ -27,3 +27,6 @@ stages:
         dockerfile: '**/Dockerfile'
         tags: |
           $(tag)
+    - task: CmdLine@2
+      inputs:
+        script: docker image
